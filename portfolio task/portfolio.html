@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Task</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="name">
+             <h3>Alex Johnson</h3>
+        </div>
+        <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Resume</a>
+                <a href="#">Contact</a>
+            </ul>
+        </div>
+       
+    </nav>
+    <section class="introduction">
+        <div class="intro-text">
+            <h1>Hi, I'm Alex Johnson</h1>
+            <p style="color: rgb(14, 122, 238); font-size: 15px;">Aspiring Frontend Developer</p>
+            <p style="color: rgb(90, 84, 84);">Passionate about creating beautiful, responsive web experiences.<br> Currently learning React, JavaScript, and modern web technologies.</p>
+            <button class="projects-btn">View Projects</button>
+            <button class="hire-btn">Hire Me</button>
+        </div>
+        <div class="pic">
+            <img src="https://images.pexels.com/photos/16771673/pexels-photo-16771673.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+        <div>
+            <h2>About Me</h2>
+            <p style="color: rgb(92, 87, 87);" >I'm a dedicated web development student with a passion for creating user-friendly digital experiences.</p>
+        </div>
+
+    </section>
+
+    <section class="details">
+        <div class="leftside-details">
+            <h3>My Journey</h3>
+            <p>Started my coding journey 2 years ago and have been fascinated by the endless possibilities of web development.I love turning ideas into interactive experiences. </p>
+            <h4>Education</h4>
+            <p>Computer Science Student at University of Technology</p>
+            <h4>Certifications</h4>
+            <p>freeCodeCamp Responsive Web Design, JavaScript Algorithms</p>
+
+        </div>
+        <div class="rightside-details">
+            <h3>Skills</h3>
+            <i class="fa-brands fa-html5" style="color: #d78a1d;"></i> <span>HTML5</span>
+            <progress id="html" value="90" max="100"></progress><br><br>
+            <i class="fa-brands fa-css3-alt" style="color: #326bcd;"></i> <span>CSS3</span>
+            <progress id="css" value="80" max="100"></progress><br><br>
+            <i class="fa-brands fa-js" style="color: #FFD43B;"></i> <span>JavaScript</span>
+            <progress id="javascript" value="60" max="100"></progress><br><br>
+            <i class="fa-brands fa-react" style="color: #74C0FC;"></i> <span>React</span>
+            <progress id="react" value="50" max="100"></progress>
+        </div>
+
+    </section>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on during my learning journey</p>
+
+    </section>
+    <section class="project-cards">
+        <div class="project-card">
+            <img src="http://formoid.com/articles/data/upload/2018/08/html-biztemplate.jpg" alt="website">
+            <h3>E-Commerce Website</h3>
+            <p>A responsive online store bulit with HTML, CSS< and JavaScript featuring shopping cart functionality.</p>
+            <div class="tags">
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="js">JavaScript</span>
+            </div>
+            <div class="buttons">
+                <button class="live-btn">View Live</button>
+                <button class="git-btn">GitHub</button>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="https://www.igeeksblog.com/wp-content/uploads/2022/10/How-to-use-weather-app-on-iPhone-and-iPad.jpg" alt="weather website">
+            <h3>Weather App</h3>
+            <p>Real-time weather application using API integration with location-based forecasts.</p>
+            <div class="tags">
+                <span class="react">React</span>
+                <span class="api">API</span>
+                <span class="css3">CSS3</span>
+            </div>
+            <div class="buttons">
+                <button class="live-btn">View Live</button>
+                <button class="git-btn">GitHub</button>
+            </div>
+        </div>
+
+        <div class="project-card">
+             <img src="https://ded9.com/wp-content/uploads/2023/06/How-to-use-Task-Manager-in-Windows-11.webp" alt="task manager website">
+            <h3>Task Manager</h3>
+            <p>Productivity app with drag-and-drop functionality and local storage implementation.</p>
+            <div class="tags">
+                <span class="jS">JavaScript</span>
+                <span class="localstorage">LocalStroage</span>
+                <span class="dom">DOM</span>
+            </div>
+            <div class="buttons">
+                <button class="live-btn">View Live</button>
+                <button class="git-btn">GitHub</button>
+            </div>
+        </div>
+      
+
+       
+    </section>
+
+    <section class="resume">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my background, education, and technical skills</p>
+        <div class="resume-download">
+            <i class="fa-solid fa-file-pdf fa-2xl" style="color: #f85712;"></i>
+            <h4>Alex Johnson - Frontend Developer</h4>
+            <p>complete overview of my skills, education, and project experience</p>
+            <button type="submit"><i class="fa-solid fa-download" style="color: #f7f7f7;"></i>Download Resume (PDF)</button>
+
+        </div>
+
+    </section>
+    <section class="contact-details">
+        <h2>Get In Touch</h2>
+        <p>I'm always open to discussing new opportunities and interesting projects.</p>
+
+        <div class="personal-details">
+            <div class="left-details">
+                <h3>Let's Connect</h3>
+                <p class="mail"><i class="fa-solid fa-envelope fa-2xs" style="color: #168be3;"></i> alex.johnson@gmail.com</p>
+                <p class="phone"><i class="fa-solid fa-phone fa-2xs" style="color: #168be3;"></i> +1 (445) 234-5668</p>
+                <p class="location"><i class="fa-solid fa-location-dot fa-2xs" style="color: #168be3;"></i> San Francisco, CA</p>
+                <div class="social-info">
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #0f8ff1;"></i>
+                <i class="fa-brands fa-github fa-2xl" style="color: #010813;"></i>
+                <i class="fa-brands fa-square-twitter fa-2xl" style="color: #74C0FC;"></i>
+                </div>
+            </div>
+          <div class="right-details">
+            <form >
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="your name"><br>
+                <label for="email">Email</label><br>
+                <input type="email"  name="email" id="email" placeholder="your@email.com"><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="5" placeholder="Your message..." required></textarea><br>
+                <button type="submit">Send Message </button>
+            </form>
+
+          </div>
+        </div>
+
+    </section>
+    <section class="footer">
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        
+            <p>@ 2024 Alex Johnson. All rights reserved.</p>
+            <p style="color: #0f7dd2;"><i class="fa-solid fa-up-long fa-2xs" style="color: #0f7dd2;"></i>Back to top</p>
+    </div>
+        <button class="help-btn">? Help</button>
+    </section>
+</body>
+</html>
