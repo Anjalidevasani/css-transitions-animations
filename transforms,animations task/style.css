@@ -1,0 +1,440 @@
+.btn{
+    background-color:blue;
+    padding: 15px 25px;
+    margin: 20px 20px;
+    font-size: 15px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    background-color: rgb(129, 5, 5);
+    transform: scale(1.1);
+}
+.card-hover img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+}
+.card-hover{
+    background-color: white;
+    border-radius: 9px;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+.card-hover:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+   
+}
+.card-hover h3{
+    padding-left: 20px;
+}
+.card-hover p{
+    padding-left: 20px;
+}
+.nav-links{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    gap: 30px;
+   
+}
+.nav-links  a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 5px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #007BFF;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links  a:hover::after {
+  width: 100%;
+}
+.login-btn{
+    margin: 50px 40px ;
+    padding: 18px;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.login-btn:hover{
+    padding: 25px;
+    border-color: blue;
+    /* transform: scale(1.01); */
+   
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+ 
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+ .circle{
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  border-radius: 50%;
+  background-color: royalblue;
+  border: 2px solid black;
+  border-top: 2px solid rgb(223, 26, 26);
+  animation: spin 1s linear infinite;
+ 
+}
+@keyframes spin{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+} 
+.card-container{
+  perspective: 1000px;
+  width: 350px;
+  height: 250px;
+  margin: 30px;
+}
+.flip-card{
+  width: 100%;
+  height: 100%;
+  position:relative;
+  transform-style: preserve-3d;
+  transition:transform 0.6s;
+}
+.card-front img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ .card-container:hover .flip-card{
+  transform: rotateY(180deg);
+
+}
+ .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+       overflow: hidden;
+}
+.card-back{
+  background-color: #007BFF;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}  
+.product-card img{
+  width: 270px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px  ;
+  
+}
+.product-card{
+  width: 300px;
+  height: 350px;
+  background-color: violet;
+  border-radius: 10px;
+  overflow: hidden;
+  transition:transform 0.3s ease;
+}
+.product-card:hover{
+  transform: scale(1.05);
+  
+}
+.product-content{
+  padding: 15px 30px;
+  
+
+}
+
+.play-btn{
+  margin: 30px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius:10px ;
+  background-color: greenyellow;
+  transition: transform 0.4s ease-in-out;
+  
+}
+.play-btn:hover{
+  transform: rotate(360deg);
+}
+.bouncing-ball{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.ball{
+  width: 90px;
+  height: 90px;
+  background-color: seagreen;
+  border-radius: 50%;
+  position: absolute;
+  animation: bounce 0.8s ease-in-out infinite;
+
+}
+@keyframes bounce{
+   0% {
+       transform: translateY(0px);
+       
+}
+   50% {
+       transform: translateY(200px);
+       
+}
+100%{
+  transform: translateY(0px);
+  
+}
+}
+.text-wrapping {
+ margin: 50px 20px;
+  
+}
+.text{
+   font-size: 40px;
+   margin-left: 35%;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 2px solid black;
+   animation: typing 3s linear infinite, blink 0.5s step-end infinite;
+
+} 
+@keyframes typing{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 400px;
+    }
+ }
+
+ @keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+ } 
+ 
+.card-container{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.card{
+  width: 400px;
+  height: 150px;
+  background-color:chocolate;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: slideIn 0.8s ease forwards;
+
+}
+@keyframes slideIn{
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  }
+.delay-1{
+  animation-delay: 1s;
+}
+.delay-2{
+  animation-delay: 2s;
+}
+.delay-3{
+  animation-delay: 3s;
+}
+.bell{
+  position: relative;
+  font-size: 40px;
+  margin-top: 50px;
+
+}
+.pulse-dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+  opacity: 1;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+}
+50%{
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+100%{
+  transform: scale(1);
+  opacity: 1;
+
+}
+}
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 50px;
+   width: 70%;
+  height: 180px;
+  gap: 30px;
+
+}
+  
+.product-image img{
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px 5px;
+   transition: transform 0.4s ease;
+}
+.product{
+ background-color: lightcyan;
+ border-radius:10px;
+ overflow: hidden;
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+ transform: translateY(100px);
+ transition: transform 0.3s ease, opacity 0.3s ease;
+ animation: slideInUp 0.8s ease forwards;
+ -webkit-animation: slideInUp 0.8s ease forwards;
+}
+@keyframes slideInUp{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  
+}
+  to{
+    opacity: 1;
+    transform: translateY(0)  ;
+}
+
+}
+.delays-1 {
+  animation-delay: 0.2s;
+}
+.delays-2 {
+  animation-delay: 0.4s;
+}
+.delays-3 {
+  animation-delay: 0.6s;
+}
+.product:hover .product-image img {
+  transform: scale(1.05) rotate(0deg);
+
+}
+.profile-card {
+  width: 250px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: background 0.4s ease;
+  position: relative;
+  margin-top: 50px;
+}
+
+.profile-card:hover {
+  background: #f0f8ff;
+}
+
+.profile-image img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.profile-card:hover .profile-image img {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  padding: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.profile-card:hover .profile-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+.profile-image img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
